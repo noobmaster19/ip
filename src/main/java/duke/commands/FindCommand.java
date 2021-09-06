@@ -21,7 +21,7 @@ public class FindCommand extends Command {
                 Task task = userInputs.get(i);
                 String description = task.getDescription();
                 if (description.contains(keyword)) {
-                    tasksToPrint += (task + " ");
+                    tasksToPrint += (String.valueOf(i+1) + " " + task + "\n");
                 }
             }
             return tasksToPrint;

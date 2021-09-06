@@ -10,6 +10,8 @@ public class Parser {
             return new ExitCommand();
         } else if (input.startsWith("done")) {
             return new DoneCommand(input);
+        } else if (input.startsWith("snooze")) {
+            return new SnoozeCommand(input);
         } else if (input.startsWith("find")) {
             return new FindCommand(input);
         } else if (input.equals("list")) {

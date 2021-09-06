@@ -57,9 +57,6 @@ public class TaskList {
      */
     public void addTask(Task task) throws DukeException {
         userInputs.add(task);
-        System.out.println("Got it. I've added this task: ");
-        System.out.println(task);
-        System.out.println("Now you have " + userInputs.size() + " tasks in the list.");
     }
 
     /**
@@ -68,12 +65,8 @@ public class TaskList {
      */
     public void deleteTask(Integer input) {
         try {
-            System.out.println("Noted. I've removed this task: ");
             Task task = userInputs.get(input);
-            userInputs.remove(input);
-            System.out.println(" " + task);
-            task = null;
-            System.out.println("Now you have " + userInputs.size() + " tasks in the list.");
+            userInputs.remove(task);
         } catch (Exception e) {
             System.out.println(e);
         }

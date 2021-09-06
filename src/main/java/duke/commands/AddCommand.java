@@ -42,7 +42,7 @@ public class AddCommand extends Command {
         Task task;
         try {
             if (input.equals("todo") || input.equals("deadline") || input.equals("event")) {
-                throw new DukeException("☹ OOPS!!! The description of a " + input + " cannot be empty.");
+                throw new DukeException("OOPS!!! The description of a " + input + " cannot be empty.");
             }
 
             if (this.type == Type.todo) {

@@ -23,7 +23,7 @@ public class ListCommand extends Command {
         assert (tasksToPrint == "");
         for (int i = 0; i < userInputs.size(); i++) {
             Task task = userInputs.get(i);
-            tasksToPrint += (task + " ");
+            tasksToPrint += (String.valueOf(i+1) + " " + task + "\n");
         }
         return tasksToPrint;
     }

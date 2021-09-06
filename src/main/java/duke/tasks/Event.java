@@ -14,6 +14,6 @@ public class Event extends TaskWithDate{
     
     @Override
     public String toString() {
-        return "[E]" + super.toString() + " (at: " + this.date + ")";
+        return "[E]" + super.toString() + " (at: " + this.getDate() + ")";
     }
 }

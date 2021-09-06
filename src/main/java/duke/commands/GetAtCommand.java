@@ -36,9 +36,9 @@ public class GetAtCommand extends Command{
             if (task instanceof TaskWithDate) {
                 // We know that the incoming task is a TaskWithDate, so its safe to type cast it
                 TaskWithDate datedTask = (TaskWithDate) task;
-                if (datedTask.date.equals(date)) {
+                if (datedTask.getDate().equals(date)) {
                     // Print out only if its equals to the date of interest
-                    tasksToPrint += (task + " ");
+                    tasksToPrint += (String.valueOf(i+1) + " " + task + "\n");
                 }
             }
         }

@@ -14,6 +14,6 @@ public class Deadline extends TaskWithDate {
     
     @Override
     public String toString() {
-        return "[D]" + super.toString() + " (by: " + this.date + ")";
+        return "[D]" + super.toString() + " (by: " + this.getDate() + ")";
     }
 }

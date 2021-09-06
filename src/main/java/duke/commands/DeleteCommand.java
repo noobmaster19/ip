@@ -26,7 +26,7 @@ public class DeleteCommand extends Command{
         try {
             tasks.deleteTask(index);
             Storage.removeLine(index);
-            return "Deleted!";
+            return "Noted. I've removed this task: " + (index + 1);
         } catch (Exception e){
             System.out.println(e);
             return e.getMessage();
